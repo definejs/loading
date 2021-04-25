@@ -1,8 +1,6 @@
 ﻿
-const $String = require('@definejs/string');
 
-const prefix = 'definejs-loading-';     //用于生成组件 id 的前缀部分。
-const suffix = 4;                       //用于生成组件 id 的随机部分的长度。
+const IDMaker = require('@definejs/id-maker');
 
 
 module.exports = {
@@ -10,13 +8,11 @@ module.exports = {
     * 
     */
     create(config, others) {
-        let id = $String.randomId(prefix, suffix);
-        let textId = $String.randomId(prefix, 'text-', suffix);
-
+        let maker = new IDMaker(config.idPrefix);
 
         let meta = {
-            'id': id,
-            'textId': textId,
+            'id': maker.next(),
+            'textId': maker.next('text'),
             'text': config.text || '',
             'cssClass': config.cssClass || '',
             'container': config.container,

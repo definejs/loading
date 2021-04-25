@@ -40,6 +40,7 @@ class Loading {
         //对外暴露的属性。
         Object.assign(this, {
             'id': meta.id,
+            '$': null,
         });
 
     }

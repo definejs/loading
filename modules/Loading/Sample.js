@@ -2,7 +2,7 @@
 
 const name$sample = {
     'IOS': `
-        <div id="{id}" class="definejs-loading-ios {cssClass}" >
+        <div id="{id}" class="definejs-Loading-ios {cssClass}" >
             <div class="Main">
                 <div class="Item-0"></div>
                 <div class="Item-1"></div>

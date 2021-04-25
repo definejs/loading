@@ -4,6 +4,11 @@
 */
 module.exports = {
     /**
+    * 生成组件时的 id 前缀。
+    * 建议保留现状。
+    */
+    idPrefix: 'definejs-Loading',
+    /**
     * 加载中时要显示的文本。
     */
     text: '处理中...',

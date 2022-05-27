@@ -133,6 +133,12 @@ class Loading {
         }
 
         meta.$.toggleClass('NoText', !meta.text);
+
+        //
+        if (!meta.text) {
+            meta.$.removeClass('SameLine');
+        }
+
         meta.$.show();
         meta.emitter.fire('show');
 

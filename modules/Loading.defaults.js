@@ -32,6 +32,7 @@ module.exports = {
     duration: 0,
     /**
     * 组件用到的 css 类名。
+    * 内部有一个比较有用的类名：SameLine，菊花与文子在同一行。
     */
     cssClass: '',
     /**

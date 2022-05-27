@@ -7,6 +7,7 @@ module.exports = {
         cssClass: 'FullScreen',
     },
 
+    //给内部的 Scroller 模块使用。
     'scroller.pulldown': {
         sample: 'IOS',
         cssClass: 'SameLine Pulldown',
@@ -14,6 +15,7 @@ module.exports = {
 
     },
 
+    //给内部的 Scroller 模块使用。
     'scroller.pullup': {
         sample: 'IOS',
         cssClass: 'SameLine Pullup',

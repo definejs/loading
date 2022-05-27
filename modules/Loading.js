@@ -134,7 +134,7 @@ class Loading {
 
         meta.$.toggleClass('NoText', !meta.text);
 
-        //
+        //无文本时，须去掉 SameLine。
         if (!meta.text) {
             meta.$.removeClass('SameLine');
         }

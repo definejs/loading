@@ -107,15 +107,20 @@
             width: 2px;
             height: 5px;
             border-radius: 8px;
-            -webkit-transform: scale(0.4);
+            
             transform: scale(0.4);
-            -webkit-animation: fadeG 1.1s linear infinite;
+            -webkit-transform: scale(0.4);
             -moz-transform: scale(0.4);
-            -moz-animation: fadeG 1.1s linear infinite;
             -o-transform: scale(0.4);
-            -o-animation: fadeG 1.1s linear infinite;
             -ms-transform: scale(0.4);
+
+            animation: fadeG 1.1s linear infinite;
+            -webkit-animation: fadeG 1.1s linear infinite;
+            -moz-animation: fadeG 1.1s linear infinite;
+            -o-animation: fadeG 1.1s linear infinite;
             -ms-animation: fadeG 1.1s linear infinite;
+
+            
         }
 
         .Item (@delay, @deg,@a,@b) {
